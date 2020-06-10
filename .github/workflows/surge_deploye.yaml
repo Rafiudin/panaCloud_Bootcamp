@@ -19,6 +19,6 @@ jobs:
       - name: Build React App
         run: yarn build
       - name: Install Surge
-        run: npm install -g surge
+        run: yarn install -g surge
       - name: Run surge
-        run: surge ./build bootcamp_react_ziakhan.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build rafiudin.surge.sh --token ${{ secrets.SURGE_TOKEN }}
